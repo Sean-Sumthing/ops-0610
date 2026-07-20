@@ -166,7 +166,7 @@ button{cursor:pointer}
 
 /* 특이사항 */
 .sec-title-line{margin-top:24px;padding-bottom:7px;border-bottom:1px solid #555}  /* 제목 아래 라인 */
-.notes-list{padding:10px 2px 4px}
+.notes-list{padding:6px 2px 4px}
 .note-row{display:flex;align-items:flex-start;gap:6px;margin-bottom:3px;position:relative;font-size:12px;color:#333;line-height:1.6}
 .note-row .note-ck{margin-top:3px;margin-right:4px;flex-shrink:0;cursor:pointer}
 .note-row .bullet{flex-shrink:0;color:#444;width:8px;text-align:center}
@@ -183,8 +183,8 @@ button{cursor:pointer}
 /* 계약 기본 사항: 문구는 CONFIG(payload/config.json)로 주입되는 읽기 전용 텍스트 */
 .terms-area.off{opacity:.38}                 /* 토글 해제: 화면에서 흐리게 */
 .terms-area .sec-title-line{margin-top:18px}  /* 상단 버튼 줄과의 간격만 살짝 축소(특이사항 제목엔 영향 없음) */
-.terms-body{padding-top:8px;font-size:9px;line-height:1.5;color:#333}
-.terms-body p{margin:0 0 6px}
+.terms-body{padding-top:5px;font-size:9px;line-height:1.5;color:#333}
+.terms-body p{margin:0 0 6px;break-inside:avoid;page-break-inside:avoid}  /* 2페이지로 넘어가도 조항 중간에서 잘리지 않게 */
 .terms-body p:last-child{margin-bottom:0}
 
 .copyright{text-align:right;font-size:10px;color:#999;margin-top:24px;padding-top:8px;border-top:1px solid #555}
